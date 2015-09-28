@@ -2,9 +2,7 @@ var colores_g = ["#3366cc", "#dc3912", "#ff9900", "#109618", "#990099", "#0099c6
 var width = 800,
     height = 600;
 	// create canvas
-var svg = d3.select("#canvas").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+
 // init color 
 //var color = d3.scale.category20();
 /*	
@@ -64,20 +62,20 @@ var color = d3.scale.category20();
 
 var force = d3.layout.force()
     .charge(-200)
-    .linkDistance(40)
+    .linkDistance(80)
     .size([width, height]);
 
 var svg = d3.select("#canvas").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("miserables.json", function(error, graph) {
+d3.json("data/miserables.json", function(error, graph) {
   if (error) throw error;
 
   force
       .nodes(graph.nodes)
       .links(graph.links)
-      
+   
 
   var link = svg.selectAll(".link")
       .data(graph.links)
@@ -89,14 +87,24 @@ d3.json("miserables.json", function(error, graph) {
       .data(graph.nodes)
       .enter().append("circle")
       .attr("class", function(d) { if(d.group<10){ return "node";} else {return "paper";}  })
-      .attr("r", function(d) { if(d.group<10){ return 30;} else {return 15;}  })
+      .attr("r", function(d) { if(d.group<10){ return 30;} else {return 5;}  })
       .style("stroke", function(d) { return color(d.group); })
 	  .style("fill", function(d) { var img = "url(#image"+d.group; return img; })//"url(#"+"image"+d.group+")")  
       .call(force.drag);
 
-  node.append("title")
-      .text(function(d) { return d.name; });
-
+  //node.append("title")
+  //    .text(function(d) { return d.name; });
+// draw the node text as well
+	/* Draw the node labels first
+   var texts = svg.selectAll(".paper")
+                    .append("text")
+                    .attr("fill", "black")
+                    .attr("font-family", "sans-serif")
+                    .attr("font-size", "5px")
+					.attr("x", d.cx)
+					.attr("y", d.cy)
+                    .text(function(d) { return d.name; });      */
+					
   force.on("tick", function() {
     link.attr("x1", function(d) { return d.source.x; })
         .attr("y1", function(d) { return d.source.y; })

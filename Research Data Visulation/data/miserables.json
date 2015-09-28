@@ -1,0 +1,30 @@
+{
+  "nodes":[
+    {"name":"Stacy","group":1},
+    {"name":"Yuyu","group":2},
+    {"name":"Margot","group":3},
+    {"name":"Sophie","group":4},
+    {"name":"Dan","group":5},
+    {"name":"Bexy","group":6},
+	{"name":"Gratch","group":7},
+	{"name":"Reducing shame in a game that predicts HIV risk","group":11},
+	{"name":"Compound Gesture Generation: A Model Based on Ideational Units","group":12},
+	{"name":"Metaphoric gestures: towards grounded mental spaces","group":13},
+	{"name:":"Subjective Perceptions in Wartime Negotiation","group":14},
+	{"name:":"Emotional Perception for Updating Agents' Beliefs","group":14}
+	
+  ],
+  "links":[
+  {"source": 0,"target": 7},
+  {"source": 0,"target": 8},
+  {"source": 0,"target": 9},
+  {"source": 0,"target": 9},
+  {"source": 1,"target": 8},
+  {"source": 0,"target": 9},
+  {"source": 2,"target": 9},
+  {"source": 5,"target": 11},
+  {"source": 2,"target": 11},
+  {"source": 0,"target": 11}
+  
+  ]
+}
