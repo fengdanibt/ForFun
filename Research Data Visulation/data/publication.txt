@@ -1,0 +1,35 @@
+{
+ "authorNum": 4,
+ "paperNum": 10,
+ "authorList":[
+	{
+	 "name":"Stacy",
+	 "paperIDs":[0, 1, 2, 3, 4]
+	},
+	{
+	 "name":"Margot",
+	 "paperIDs":[1, 4, 8, 9]
+	},
+	{
+	 "name":"Yuyu",
+	 "paperIDs":[1,8]
+	},
+	{
+	 "name":"Bexy",
+	 "paperIDs":[4]
+	}
+ ],
+ "paperList":[
+	{"id":0,"title":"Reducing shame in a game that predicts HIV risk reduction","year":2013,"type":"article"},
+	{"id":1,"title":"Compound Gesture Generation: A Model Based on Ideational Units","year":2014,"type":"conference"},
+	{"id":2,"title":"Metaphoric gestures: towards grounded mental spaces","year":2014,"type":"conference"},
+	{"id":3,"title":"Subjective Perceptions in Wartime Negotiation","year":2013,"type":"conference"},
+	{"id":4,"title":"Emotional Perception for Updating Agents' Beliefs","year":2015,"type":"conference"},
+	{"id":5,"title":"Are you thinking what I'm thinking?","year":2013,"type":"conference"},
+	{"id":6,"title":"Modeling Two-Player Games in the Sigma Graphical Cognitive Architecture","year":2013,"type":"conference"},
+	{"id":7,"title":"Reinforcement Learning for Adaptive Theory of Mind in the Sigma Cognitive Architecture","year":2014,"type":"conference"},
+	{"id":8,"title":"Virtual Character Performance From Speech","year":2013,"type":"conference"},
+	{"id":9,"title":"Gesture with Meaning","year":2013,"type":"conference"}
+	
+ ]
+}

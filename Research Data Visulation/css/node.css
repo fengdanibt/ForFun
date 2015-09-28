@@ -4,10 +4,17 @@
 }
 
 .link {
+  fill: #999;
+  fill-opacity: 1.6;
   stroke: #999;
   stroke-opacity: 1.6;
 }
 
-.paper {
- stroke-width: 15px;
+.author{
+stroke-width: 5px;
+}
+
+.name{
+font-family: "Comic Sans MS", cursive, sans-serif;
+
 }
